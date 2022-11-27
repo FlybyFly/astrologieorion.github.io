@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/StyleSheet.css">
+    <title>Astrologie Orion – Inscrivez-vous</title>
+</head>
+<body>
+    <div class="conteneur principal">
+        <header>
+            <img src="Images/AO_100.png" alt="Logo Astrologie Orion" class="logo">
+            <div class="texte-entête">
+                <h1>Astrologie Orion</h1>
+                <h3>Prévisions personnalisées</h3>
+            </div>
+        </header>
+        <nav>
+            <ul id="navigation">
+                <li><a href="../Orion/index.html">Accueil</a></li>
+                <li><a href="../Orion/biographie.html">Qui suis-je ?</a></li>
+                <li class="menu "><a href="#zodiaque">Le Zodiaque</a>
+                    <ul class="sous-menu">
+                        <li><a href="../Orion/signes.html">Les signes et les dates</a></li>
+                        <li><a href="../Orion/caractéristiques.html">Les caractéristiques des signes</a></li>
+                        <li><a href="../Orion/traits.html">Les traits associés aux signes</a></li>
+                        <li class="menu"><a href="../Orion/horoscopes.html">Horoscopes 2022</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Orion/inscription.html">Prévisions personnalisées</a></li>
+                <li><a href="#contact">Contactez-moi</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Votre avenir 24h à la fois</h1>
+            <p>Si vous désirez recevoir vos prédictions quotidiennes personnalisées dans votre boîte courriel, vous n'avez qu'à remplir le formulaire ci-desous et cliquer sur le bouton «Soumettre».<br/>
+            Vous pouvez choisir de recevoir également vos prédictions par messages textes en entrant votre numéro de téléphone cellulaire.</p>
+            <form name="InscriptionAO" action="inscription" method="post">
+                <fieldset name="infosperso" id="infosperso">
+                    <p><label for="prenom">* Prénom : </label>
+                    <input type="text" name="prenom" id="prenom" size="50" placeholder="Inscrivez votre prénom" autofocus required/></p>
+                    <p><label for="Nom">* Nom : </label>
+                    <input type="text" name="nom" id="nom" size="50" placeholder="Inscrivez votre nom de famille" required/></p>
+                    <p><label for="courriel">Adresse de courriel : </label>
+                    <input type="email" name="courriel" id="courriel" size="50"></p>
+                    <p><label for="Telephone">Téléphone cellulaire : </label>
+                    <input type="tel" name="telephone" id="telephone" /></p>
+                    <input type="radio" id="parcou" name="envoi" /><label for="parcou">Utiliser mon courriel</label>
+                    <input type="radio" id="parcel" name="envoi" /><label for="parcel">Utiliser mon cellulaire</label>
+                    <input type="radio" id="parcoucel" name="envoi" /><label for="parcoucel">Utiliser mon courriel et mon cellulaire</label>
+                    <p><label for="fete">* Quelle est votre date de naissance ? : </label>
+                    <input type="date" name="fete" id="fete" required/></p>
+                    <p><label for="heure">Quelle est l'heure de votre naissance ? : </label>
+                    <input type="time" name="heure" id="heure"/></p>
+                    <p><label for="signe">Quel est votre signe zodiaque ? </label> 
+                    <select name="signe" id="signe" required>
+                        <option value="none"></option>
+                        <optgroup label="Signes d'eau">
+                            <option value="cancer">Cancer</option>
+                            <option value="scorpion">Scorpion</option>
+                            <option value="poisson">Poisson</option>
+                        </optgroup>
+                        <optgroup label="Signes de feu">
+                            <option value="belier">Bélier</option>
+                            <option value="lion">Lion</option>
+                            <option value="sagitaire">Sagitaire</option>
+                        </optgroup>
+                        <optgroup label="Signes de terre">
+                            <option value="taureau">Taureau</option>
+                            <option value="vierge">Vierge</option>
+                            <option value="capricorne">Capricorne</option>
+                        </optgroup>
+                        <optgroup label="Signes d'air">
+                            <option value="gemeaux">Gémeaux</option>
+                            <option value="balance">Balance</option>
+                            <option value="verseau">Verseau</option>
+                        </optgroup>
+                    </select>
+                    <p><label for="ascendant">Quel est votre ascendant ? </label> 
+                    <select name="ascendant" id="ascendant">
+                        <option value="none"></option>
+                        <optgroup label="Signes d'eau">
+                            <option value="cancer">Cancer</option>
+                            <option value="scorpion">Scorpion</option>
+                            <option value="poisson">Poisson</option>
+                        </optgroup>
+                        <optgroup label="Signes de feu">
+                            <option value="belier">Bélier</option>
+                            <option value="lion">Lion</option>
+                            <option value="sagitaire">Sagitaire</option>
+                        </optgroup>
+                        <optgroup label="Signes de terre">
+                            <option value="taureau">Taureau</option>
+                            <option value="vierge">Vierge</option>
+                            <option value="capricorne">Capricorne</option>
+                        </optgroup>
+                        <optgroup label="Signes d'air">
+                            <option value="gemeaux">Gémeaux</option>
+                            <option value="balance">Balance</option>
+                            <option value="verseau">Verseau</option>
+                        </optgroup>
+                    </select>
+                    <p><input type="checkbox" name="confrimation" id="confirmation" checked><label for="confirmation">Je veux recevoir mon horoscope quotidien personnalisé</label></p>
+                    <p><input type="submit" value="Soumettre">
+                    <input type="reset" value="Effacer"/></p>
+                    <legend>Les champs marqués d'un astérisque (*) sont obligatoires</legend>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgba(128, 0, 128, 0.473);
+    padding-bottom: 20px;
+    background: url(../Images/granite6.gif);
+    padding-top: 20px;
+}
+nav .onglets a{
+    color: purple;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+    border-bottom: 3px solid purple;
+}
+nav .onglets{
+    margin-left: 50px;
+}
+nav img{
+    width: 200px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 0px 4px rgba(179, 12, 123, 0.3);       
+}
+header{
+    color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../Images/veil.jpg);
+    background-size: 100% 100%;
+    padding: 40px;
+}
+header h1{
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    border-bottom: 4px solid rgba(251, 255, 40, 0.527);
+}
+.main{
+    margin-top: 0;
+    border-top: 5px solid rgba(128, 0, 128, 0.566);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../Images/cuire6.gif);
+}
+.main .contenu{
+    margin: auto;
+}
+.main .contenu .carte{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.main .contenu .carte .droite img{
+    height: 300px;
+    width: 400px;
+}
+.main .contenu .carte .gauche{
+    flex: 0 0 30%;
+    padding: 20px;
+    background: url(../Images/cuire7.gif);
+    font: bold;
+    color: rgb(77, 4, 77);
+    height: 260px;
+}
+.main .contenu .carte .droite{
+    flex: 0 0 30%;
+}
+footer{
+    border-top: 5px solid rgba(128, 0, 128, 0.566);
+    background: url(../Images/granite6.gif);
+    padding: 30px 50px;
+}
+footer h3{
+    color: purple;
+    font-weight: bold;
+}
+footer #contact a, .info a{
+    color: rgb(121, 36, 201);
+}
+footer #contact a{
+    padding-left: 40px;
+}
+footer .infos{
+    display: flex;
+    margin-left: 15%;
+}
+footer .infos .info{
+    flex: 0 0 45%;
+    padding: 10px;
+}
+footer .infos #contact{
+    flex: 0 0 45%;
+    padding: 10px;
+}
+footer .infos .info li{
+    list-style-type: none;
+}
+footer .infos .info h3{
+    border-bottom: 3px solid rgba(128, 0, 128, 0.473);
+    width: 60%;
+    padding-bottom: 5px;
+}
+footer .infos #contact h3{
+    border-bottom: 3px solid rgba(128, 0, 128, 0.473);
+    width: 60%;
+    padding-bottom: 5px;
+}
+@media (max-width:795px){
+    nav{
+        display: block;
+    }
+    nav img{
+        margin-left: 20px;
+    }
+    nav .onglets{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    nav .onglets a{
+        font-size: 13px;
+    }
+    header h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    header h4{
+        margin-top: 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .main{
+        width: 100%;
+        margin: auto;
+    }
+    .main .contenu .carte{
+        display: block;
+        width: 100%;
+    }
+    .main .contenu .carte .droite img{
+        width: 100%;
+        margin-top: 0px;
+    }
+    footer{
+        padding: 0px;
+    }
+    footer .infos{
+        display: block;
+        padding: 0px;
+    }
+    footer .infos .info{
+        flex: 0 0 90%;
+        padding: 0px;
+    }
+    footer .infos #contact{
+        flex: 0 0 90%;
+        padding: 0px;
+    }
+    footer .infos .info h3{
+        margin-left: 0px;
+        width: 75%;
+        font-size: small;
+    }
+    footer .infos #contact h3{
+        margin-left: 0px;
+        width: 75%;
+        font-size: small;
+    }
+    footer .infos .info li{
+        width: 95%;
+        font-size: smaller;
+        padding-bottom: 10px;
+    }
+    #contact a{
+        width: 95%;
+        font-size: smaller;
+    }
+    #copyright{
+        font-size: x-small;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-top: 15px;
+        margin: 0px;
+    }
+}
